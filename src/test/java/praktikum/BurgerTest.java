@@ -14,7 +14,6 @@ import static org.junit.Assert.assertTrue;
 public class BurgerTest {
     private Burger burger;
 
-
     @Mock
     private Ingredient mockIngredient;
 

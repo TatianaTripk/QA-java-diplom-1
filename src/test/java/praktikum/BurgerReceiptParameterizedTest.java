@@ -1,4 +1,5 @@
 package praktikum;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -27,12 +28,12 @@ public class BurgerReceiptParameterizedTest {
 
                 {
                         new Bun("black bun", 100),
-                        new Ingredient[] {},
+                        new Ingredient[]{},
                         "(==== black bun ====)\r\n" +
                                 "(==== black bun ====)\r\n\r\n" +
                                 "Price: 200,000000\r\n"
                 },
-                               {
+                {
                         new Bun("white bun", 200),
                         new Ingredient[]{
                                 new Ingredient(IngredientType.SAUCE, "sour cream", 200)
@@ -58,25 +59,25 @@ public class BurgerReceiptParameterizedTest {
                 },
 
                 {new Bun("black bun", 100),
-                new Ingredient[]{
-                        new Ingredient(IngredientType.SAUCE, "hot sauce", 100),
-                        new Ingredient(IngredientType.SAUCE, "sour cream", 200),
-                        new Ingredient(IngredientType.SAUCE, "chili sauce", 300),
-                        new Ingredient(IngredientType.FILLING, "cutlet", 100),
-                        new Ingredient(IngredientType.FILLING, "dinosaur", 200),
-                        new Ingredient(IngredientType.FILLING, "sausage", 300)
-                },
+                        new Ingredient[]{
+                                new Ingredient(IngredientType.SAUCE, "hot sauce", 100),
+                                new Ingredient(IngredientType.SAUCE, "sour cream", 200),
+                                new Ingredient(IngredientType.SAUCE, "chili sauce", 300),
+                                new Ingredient(IngredientType.FILLING, "cutlet", 100),
+                                new Ingredient(IngredientType.FILLING, "dinosaur", 200),
+                                new Ingredient(IngredientType.FILLING, "sausage", 300)
+                        },
 
-                  "(==== black bun ====)\r\n" +
-                        "= sauce hot sauce =\r\n" +
-                        "= sauce sour cream =\r\n" +
-                        "= sauce chili sauce =\r\n" +
-                        "= filling cutlet =\r\n" +
-                        "= filling dinosaur =\r\n" +
-                        "= filling sausage =\r\n" +
-                        "(==== black bun ====)\r\n\r\n" +
-                        "Price: 1400,000000\r\n"
-        }
+                        "(==== black bun ====)\r\n" +
+                                "= sauce hot sauce =\r\n" +
+                                "= sauce sour cream =\r\n" +
+                                "= sauce chili sauce =\r\n" +
+                                "= filling cutlet =\r\n" +
+                                "= filling dinosaur =\r\n" +
+                                "= filling sausage =\r\n" +
+                                "(==== black bun ====)\r\n\r\n" +
+                                "Price: 1400,000000\r\n"
+                }
 
         });
     }
